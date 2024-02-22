@@ -26,3 +26,25 @@ const eventFriend = (friends) => {
       return newArray;
 }
 //console.log(eventFriend(friend));
+
+// Problem 3 solved
+
+
+const number = [12,21,32,43,53,23];
+const squareNumber = (array) => {
+      let sum = 0;
+      let squareArray = [];
+      let length = array.length;
+      for (const num of array){
+            const square = num * num;
+            squareArray.push(square);
+      }
+      for (const sumation of squareArray){
+            sum += sumation;
+      }
+      const average =  (sum / squareArray.length).toFixed(2);
+      return average;
+
+      
+}
+console.log(squareNumber(number));
