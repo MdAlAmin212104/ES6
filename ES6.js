@@ -47,4 +47,16 @@ const squareNumber = (array) => {
 
       
 }
-console.log(squareNumber(number));
+//console.log(squareNumber(number));
+
+
+const number1 = [2,4,2,3,5,3];
+const number2 = [3,4,24,532,56,23];
+
+const maxNumber = (array1, array2) => {
+      const combine = [...array1, ...array2];
+      const max = Math.max(...combine);
+      return max;
+
+}
+console.log(maxNumber(number1, number2));
