@@ -116,3 +116,14 @@ const instructor = [
 
 const position = instructor.filter(position => position.position == "senior");
 //console.log(position);
+
+// task using reduce property
+
+const people =[
+      {name : "Meena", age : 20},
+      {name : "Rahim", age : 15},
+      {name : "Karim", age : 22}
+]
+
+const sum = people.reduce((accumulator, current) => accumulator + current.age, 0);
+console.log(sum);
