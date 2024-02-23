@@ -77,5 +77,23 @@ let data2 ={
       ]
 }
 
-console.log(data2.data[0].bookDetails.book);
-console.log(data2.data[1].bookCategory);
+// console.log(data2.data[0].bookDetails.book);
+// console.log(data2.data[1].bookCategory);
+
+// task -4 
+
+// using map property
+let number =[1,3,5,7,9];
+const result = number.map(n=> n+1);
+console.log(result);
+
+
+const count = (array) => {
+      let newArray = [];
+      for (const n of array){
+            const count = n+1;
+            newArray.push(count);
+      }
+      return newArray;
+}
+console.log(count(number));
