@@ -103,4 +103,16 @@ const count = (array) => {
 const number1 = [33, 50, 79, 78, 90, 101, 30];
 const output = number1.filter(n => n%10 === 0);
 const output1 = number1.find(n => n%10 === 0);
-console.log(output, output1);
+//console.log(output, output1);
+
+
+// task using filter with object property
+
+const instructor = [
+      {name : "Nodi", age : 28, position : "senior"},
+      {name : "Akil", age : 26, position : "junior"},
+      {name : "Shobuj", age : 38, position : "senior"},
+]
+
+const position = instructor.filter(position => position.position == "senior");
+//console.log(position);
