@@ -85,7 +85,7 @@ let data2 ={
 // using map property
 let number =[1,3,5,7,9];
 const result = number.map(n=> n+1);
-console.log(result);
+//console.log(result);
 
 
 const count = (array) => {
@@ -96,4 +96,11 @@ const count = (array) => {
       }
       return newArray;
 }
-console.log(count(number));
+//console.log(count(number));
+
+// task using filter property
+
+const number1 = [33, 50, 79, 78, 90, 101, 30];
+const output = number1.filter(n => n%10 === 0);
+const output1 = number1.find(n => n%10 === 0);
+console.log(output, output1);
