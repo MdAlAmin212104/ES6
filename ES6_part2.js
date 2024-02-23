@@ -48,5 +48,34 @@ let students = {
             }
       }
 }
-console.log(students[2222].address['city']);
-console.log(students[3333].name);
+// console.log(students[2222].address['city']);
+// console.log(students[3333].name);
+
+// task -3 : output habluder adda and Beginner;
+
+let data2 ={
+      data :[
+            {
+                  bookId : 1,
+                  bookDetails : {
+                        book : "habluder adda",
+                        category : "XYZ",
+                        price : "20$"
+                  },
+                  bookCategory : "Basic",
+            },
+            {
+                  bookId : 2,
+                  bookDetails : {
+                        book : "gabluder adda",
+                        category : "ABC",
+                        price : "40$"
+                  },
+                  bookCategory : "beginner",
+            },
+
+      ]
+}
+
+console.log(data2.data[0].bookDetails.book);
+console.log(data2.data[1].bookCategory);
